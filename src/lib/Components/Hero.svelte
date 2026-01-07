@@ -157,7 +157,7 @@
 		padding: 0;
 		color: #ffffff;
 		font-size: 18px;
-		letter-spacing: -0.01em; /* Tightened base spacing */
+		letter-spacing: -0.01em;
 	}
 
 	.page-wrapper {
@@ -172,7 +172,6 @@
 		}
 	}
 
-	/* Hero */
 	.hero {
 		max-width: 60rem;
 		margin: 0 auto;
@@ -216,14 +215,14 @@
 		padding: 0.2rem 0.5rem;
 		font-size: 1.75rem;
 		font-weight: 700;
-		letter-spacing: -0.03em; /* Tight hashtag */
+		letter-spacing: -0.03em;
 	}
 
 	.main-title {
 		font-size: 2.25rem;
 		line-height: 1.1;
 		font-weight: 700;
-		letter-spacing: -0.04em; /* Tight headline for impact */
+		letter-spacing: -0.04em;
 		text-transform: uppercase;
 		margin: 0;
 	}
@@ -243,10 +242,9 @@
 		margin-top: 1.25rem;
 		font-size: 1.5rem;
 		font-weight: 700;
-		letter-spacing: -0.02em; /* Tightened */
+		letter-spacing: -0.02em;
 	}
 
-	/* Buttons */
 	.btn {
 		display: flex;
 		align-items: center;
@@ -257,7 +255,7 @@
 		font-weight: 700;
 		cursor: pointer;
 		font-family: 'Akshar';
-		letter-spacing: -0.01em; /* Tight buttons */
+		letter-spacing: -0.01em;
 		font-size: 1.1rem;
 	}
 
@@ -286,7 +284,6 @@
 		transform: rotate(315deg);
 	}
 
-	/* Grid */
 	.cards-grid {
 		max-width: 70rem;
 		margin: 0 auto 6rem auto;
@@ -305,7 +302,7 @@
 		margin-bottom: 1rem;
 		font-size: 1.85rem;
 		font-weight: 900;
-		letter-spacing: -0.035em; /* Tight card titles */
+		letter-spacing: -0.035em;
 		text-transform: uppercase;
 		font-family: 'Akshar';
 	}
@@ -316,12 +313,11 @@
 		line-height: 1.4;
 		font-family: 'Faustina';
 		font-weight: 300;
-		letter-spacing: -0.015em; /* Tight description */
+		letter-spacing: -0.015em;
 		max-width: 400px;
 		margin-bottom: 2rem;
 	}
 
-	/* Content Section */
 	.content-section {
 		max-width: 50rem;
 		margin: 0 auto;
@@ -333,7 +329,7 @@
 	.section-heading {
 		font-size: 2.25rem;
 		font-weight: 900;
-		letter-spacing: -0.03em; /* Tight section headings */
+		letter-spacing: -0.03em;
 		text-transform: uppercase;
 		margin-bottom: 1rem;
 		font-family: 'Akshar';
@@ -345,7 +341,7 @@
 		line-height: 1.5;
 		font-family: 'Faustina';
 		font-weight: 400;
-		letter-spacing: -0.01em; /* Tight body text */
+		letter-spacing: -0.01em;
 		max-width: 450px;
 	}
 
@@ -360,7 +356,6 @@
 		letter-spacing: -0.02em;
 	}
 
-	/* Footer */
 	.credits {
 		margin-bottom: 2.5rem;
 		font-size: 1rem;
@@ -377,7 +372,7 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		font-family: 'Akshar';
-		letter-spacing: 0.02em; /* Slightly more here for navigation clarity */
+		letter-spacing: 0.02em;
 	}
 
 	.link-btn {
@@ -385,7 +380,6 @@
 		text-underline-offset: 6px;
 	}
 
-	/* Modal */
 	.modal-content {
 		max-width: 450px;
 		padding: 2.5rem;
