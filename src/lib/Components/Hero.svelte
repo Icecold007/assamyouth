@@ -8,14 +8,12 @@
 			title: 'BECOME THE VOICE',
 			desc: 'True journalism strives when the society participates. This election season, bring us original stories from across Assam and get compensated for the same.',
 			buttonText: 'REGISTER',
-
 			link: 'https://example.com/register-link'
 		},
 		{
 			title: 'SUPPORT THE CAUSE',
 			desc: 'This whole effort will collapse without your support. Help us pay the journalists and our editors so we can cover Assam Elections 2026 without bias.',
 			buttonText: 'DONATE',
-
 			link: null
 		}
 	];
@@ -100,19 +98,19 @@
 		<h2 class="section-heading">A REVOLUTION IS HERE</h2>
 		<div class="prose">
 			<p>
-				Time and again, we, the youth of Assam have stayed quiet on<br />politics. 2026, however, is
-				our turning point. It's our time to<br />rise, choose progress, demand fairness, and
+				Time and again, we, the youth of Assam have stayed quiet on politics. 2026, however, is our
+				turning point. It's our time to rise, choose progress, demand fairness, and
 				<span class="text-highlight">vote for change.</span>
 			</p>
 			<p>
-				Support <span class="text-highlight">bondhustreams</span> in covering the 2026 elections in
-				a<br />fair, non-biased, comprehensive, and entertaining way that<br />resonates with the
-				young population of Assam.
+				Support <span class="text-highlight">bondhustreams</span> in covering the 2026 elections in a
+				fair, non-biased, comprehensive, and entertaining way that resonates with the young population
+				of Assam.
 			</p>
 			<p><span class="text-highlight tag">No drama, no hate-mongering.</span></p>
 			<p>
-				Only rational conversations, constructive criticism, asking<br />for transparency,
-				accountability, and voting for candidates<br />who listen to the
+				Only rational conversations, constructive criticism, asking for transparency,
+				accountability, and voting for candidates who listen to the
 				<span class="text-highlight">voice of young Assam.</span>
 			</p>
 		</div>
@@ -132,16 +130,18 @@
 	<div>
 		{#if showDonatePopup}
 			<div class="modal-overlay" on:click|self={() => (showDonatePopup = false)}>
-				<div class="modal-content">
-					<button class="close-btn" on:click={() => (showDonatePopup = false)}>&times;</button>
-					<img src={sample} alt="Donate QR or Info" class="modal-img" />
-					<div class="modal-text">
-						<h3>SEND GAHORI BHAT</h3>
-						<p>
-							Scan the code above or use UPI: <b>bondhu@upi</b>. Your contribution helps us devour
-							gahori bhat.
-						</p>
+				<div class="modal-wrapper">
+					<div class="modal-content">
+						<img src={sample} alt="Donate QR or Info" class="modal-img" />
+						<div class="modal-text">
+							<h3>SEND GAHORI BHAT</h3>
+							<p>
+								Scan the code above or use UPI: <b>bondhu@upi</b>. Your contribution helps us devour
+								gahori bhat.
+							</p>
+						</div>
 					</div>
+					<button class="close-btn" on:click={() => (showDonatePopup = false)}>✕</button>
 				</div>
 			</div>
 		{/if}
@@ -156,6 +156,8 @@
 		margin: 0;
 		padding: 0;
 		color: #ffffff;
+		font-size: 18px;
+		letter-spacing: -0.01em; /* Tightened base spacing */
 	}
 
 	.page-wrapper {
@@ -170,19 +172,20 @@
 		}
 	}
 
+	/* Hero */
 	.hero {
-		max-width: 56rem;
+		max-width: 60rem;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		padding-top: 2.5rem;
+		padding-top: 3rem;
 	}
 
 	.video-container {
 		position: relative;
-		margin-bottom: 2rem;
+		margin-bottom: 2.5rem;
 		aspect-ratio: 16 / 9;
 		width: 100%;
 		overflow: hidden;
@@ -202,252 +205,198 @@
 	}
 
 	.headings-container {
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 		font-family: 'Akshar';
 	}
+
 	.hashtag {
 		display: inline-block;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.75rem;
 		background-color: #fd2a2a;
-		padding: 0rem 0.25rem;
-		font-size: 1.5rem;
-		font-weight: 600;
-		letter-spacing: -0.05em;
+		padding: 0.2rem 0.5rem;
+		font-size: 1.75rem;
+		font-weight: 700;
+		letter-spacing: -0.03em; /* Tight hashtag */
 	}
+
 	.main-title {
-		font-size: 1.875rem;
-		line-height: 0.8;
-		font-weight: 600;
-		letter-spacing: -0.025em;
+		font-size: 2.25rem;
+		line-height: 1.1;
+		font-weight: 700;
+		letter-spacing: -0.04em; /* Tight headline for impact */
 		text-transform: uppercase;
 		margin: 0;
 	}
+
 	@media (min-width: 768px) {
 		.main-title {
-			font-size: 3rem;
+			font-size: 4rem;
+			line-height: 0.9;
 		}
 	}
+
 	.highlight-gold {
 		color: #f4bb12;
 	}
+
 	.subtitle {
-		margin-top: 1rem;
-		font-size: 1.125rem;
+		margin-top: 1.25rem;
+		font-size: 1.5rem;
 		font-weight: 700;
-		letter-spacing: -0.025em;
+		letter-spacing: -0.02em; /* Tightened */
 	}
 
+	/* Buttons */
 	.btn {
 		display: flex;
 		align-items: center;
-		gap: 0.75rem;
+		gap: 1rem;
 		border-radius: 0.75rem;
 		border: none;
 		color: white;
 		font-weight: 700;
 		cursor: pointer;
-		transition: background-color 0.2s;
-		text-decoration: none;
 		font-family: 'Akshar';
+		letter-spacing: -0.01em; /* Tight buttons */
+		font-size: 1.1rem;
 	}
+
 	.btn-primary {
 		background-color: #fd2a2a;
 	}
-	.btn-primary:hover {
-		background-color: #e02424;
-	}
 	.btn-channel {
-		margin: 0 auto 4rem auto;
-		padding: 0.5rem 1rem;
+		margin: 0 auto 5rem auto;
+		padding: 0.75rem 1.5rem;
 	}
 	.btn-small {
 		width: fit-content;
-		padding: 0.75rem 1.5rem;
-		font-size: 0.875rem;
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
 	}
 
 	.avatar {
-		height: 2rem;
-		width: 2rem;
-		overflow: hidden;
+		height: 2.5rem;
+		width: 2.5rem;
 		border-radius: 9999px;
 		border: 1px solid rgba(255, 255, 255, 0.2);
-		background-color: #374151;
-	}
-	.avatar img {
-		width: 100%;
-		height: 100%;
 	}
 	.arrow-icon {
-		width: 1rem;
-		height: 1rem;
+		width: 1.25rem;
+		height: 1.25rem;
 		transform: rotate(315deg);
 	}
 
+	/* Grid */
 	.cards-grid {
-		max-width: 64rem;
-		margin: 0 auto 5rem auto;
+		max-width: 70rem;
+		margin: 0 auto 6rem auto;
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 2.5rem;
+		gap: 3.5rem;
 	}
+
 	@media (min-width: 768px) {
 		.cards-grid {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
 
-	.card {
-		display: flex;
-		flex-direction: column;
-	}
-	.card-image-placeholder {
-		margin-bottom: 1.5rem;
-		aspect-ratio: 16 / 9;
-		width: 100%;
-		border-radius: 1rem;
-		background-color: #d9d9d9;
-		overflow: hidden;
-	}
-	.card-img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
 	.card-title {
-		margin-bottom: 0.75rem;
-		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		font-size: 1.85rem;
 		font-weight: 900;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.035em; /* Tight card titles */
 		text-transform: uppercase;
-		margin-top: 0;
 		font-family: 'Akshar';
 	}
+
 	.card-desc {
 		color: #fff;
-		font-size: 1rem;
-		line-height: 1;
+		font-size: 1.25rem;
+		line-height: 1.4;
 		font-family: 'Faustina';
 		font-weight: 300;
-		letter-spacing: -1px;
-		max-width: 350px;
-		margin-bottom: 1.5rem;
+		letter-spacing: -0.015em; /* Tight description */
+		max-width: 400px;
+		margin-bottom: 2rem;
 	}
 
+	/* Content Section */
 	.content-section {
-		max-width: 42rem;
+		max-width: 50rem;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.section-heading {
-		font-size: 1.875rem;
+		font-size: 2.25rem;
 		font-weight: 900;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em; /* Tight section headings */
 		text-transform: uppercase;
-		margin-bottom: 0.3rem;
+		margin-bottom: 1rem;
 		font-family: 'Akshar';
-		margin-right: 100px;
-	}
-	@media (max-width: 768px) {
-		.section-heading {
-			margin-right: 0;
-		}
-	}
-	.prose {
-		color: #ffffff;
-		font-size: 1.03rem;
-		line-height: 1;
-		font-family: 'Faustina';
-		font-weight: 300;
-		letter-spacing: -1px;
-		max-width: 350px;
-	}
-	.text-highlight {
-		background-color: #fd2a2a;
-		padding: 0 0.25rem;
-	}
-	.tag {
-		font-size: 0.875rem;
-		text-transform: uppercase;
 	}
 
-	.footer-meta {
-		padding-top: 1rem;
-		margin-right: 60px;
+	.prose {
+		color: #ffffff;
+		font-size: 1.3rem;
+		line-height: 1.5;
+		font-family: 'Faustina';
+		font-weight: 400;
+		letter-spacing: -0.01em; /* Tight body text */
+		max-width: 450px;
 	}
+
+	.text-highlight {
+		background-color: #fd2a2a;
+		padding: 0 0.35rem;
+	}
+	.tag {
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+	}
+
+	/* Footer */
 	.credits {
-		margin-bottom: 2rem;
-		font-size: 0.75rem;
-		color: #6b7280;
+		margin-bottom: 2.5rem;
+		font-size: 1rem;
+		color: #9ca3af;
 		font-family: 'Akshar';
+		letter-spacing: -0.01em;
 	}
+
 	.share-links {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1.5rem;
-		font-size: 10px;
+		gap: 2rem;
+		font-size: 13px;
 		font-weight: 700;
 		text-transform: uppercase;
 		font-family: 'Akshar';
-		justify-content: center;
-	}
-	.link-btn {
-		background: none;
-		border: none;
-		color: rgba(255, 255, 255, 0.8);
-		cursor: pointer;
-		text-decoration: underline;
-		text-underline-offset: 4px;
+		letter-spacing: 0.02em; /* Slightly more here for navigation clarity */
 	}
 
-	.modal-overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.85);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		z-index: 1000;
+	.link-btn {
+		color: rgba(255, 255, 255, 0.9);
+		text-underline-offset: 6px;
 	}
+
+	/* Modal */
 	.modal-content {
-		background: #111;
-		padding: 2rem;
-		border-radius: 1.5rem;
-		max-width: 400px;
-		width: 90%;
-		position: relative;
-		border: 1px solid #333;
-		text-align: center;
-		font-family: 'Akshar';
+		max-width: 450px;
+		padding: 2.5rem;
 	}
-	.close-btn {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
-		background: none;
-		border: none;
-		color: white;
-		font-size: 2rem;
-		cursor: pointer;
-	}
-	.modal-img {
-		width: 100%;
-		border-radius: 1rem;
-		margin-bottom: 1.5rem;
-	}
+
 	.modal-text h3 {
-		color: #f4bb12;
-		margin-bottom: 0.5rem;
-		text-transform: uppercase;
+		font-size: 1.75rem;
+		letter-spacing: -0.02em;
 	}
 	.modal-text p {
-		font-family: 'Faustina';
-		line-height: 1.4;
-		color: #ccc;
+		font-size: 1.2rem;
+		letter-spacing: -0.01em;
 	}
 </style>
